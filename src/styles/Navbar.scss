@@ -1,0 +1,53 @@
+.navbar-container {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(20px);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+
+  @media (max-width: 600px) {
+    font-size: 1.2rem;
+  }
+}
+
+.navbar-logout-btn {
+  background: none;
+  border: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  // Responsive padding adjustment
+  @media (max-width: 600px) {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+}

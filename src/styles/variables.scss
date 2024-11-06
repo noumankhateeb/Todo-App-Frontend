@@ -1,0 +1,17 @@
+// _variables.scss
+
+// Colors
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-color: #333;
+$background-color: #f4f4f4;
+$white: #ffffff;
+
+// Mixins for responsiveness
+@mixin respond($breakpoint) {
+  @if $breakpoint == "tablet" {
+    @media (max-width: 768px) { @content; }
+  } @else if $breakpoint == "mobile" {
+    @media (max-width: 480px) { @content; }
+  }
+}

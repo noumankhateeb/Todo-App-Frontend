@@ -1,0 +1,38 @@
+@import 'variables';
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: $font-color;
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  
+    .todo-text {
+      font-size: 1rem;
+      text-decoration: none;
+  
+      &.completed {
+        text-decoration: line-through;
+        color: gray;
+      }
+    }
+  
+    .actions {
+      button {
+        background: none;
+        border: none;
+        color: $secondary-color;
+        font-size: 1rem;
+        cursor: pointer;
+  
+        &:hover {
+          color: darken($secondary-color, 10%);
+        }
+      }
+    }
+  }
+  
